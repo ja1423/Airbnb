@@ -1,0 +1,270 @@
+[
+    {
+        "fullname": "Patty And Beckett",
+        "imgUrl": "https://res.cloudinary.com/dtaiyvzq5/image/upload/v1670700573/tovimdeubexsdzmzdycu.webp",
+        "password": "1234",
+        "username": "Patty",
+        "id": "36133410",
+        "_id": "622f3403e36c59e6164faf93"
+    },
+    {
+        
+        "name": "Apartment in New York City",
+        "type": "Apartment",
+        "imgUrls": [
+        "https://res.cloudinary.com/dtaiyvzq5/image/upload/v1670697786/irgbk6nuyw8mbkjkw1vv.jpg",
+        "https://res.cloudinary.com/dtaiyvzq5/image/upload/v1670698547/dslqwsnrbbslpfmthgv5.jpg",
+        "https://res.cloudinary.com/dtaiyvzq5/image/upload/v1670697831/acv8oxjjfg7h9dyxexgo.jpg",
+        "https://res.cloudinary.com/dtaiyvzq5/image/upload/v1670697810/esovlltziwbii09ls1fd.jpg",
+        "https://res.cloudinary.com/dtaiyvzq5/image/upload/v1670697738/adxmcgvorlc4q8n16ylt.jpg"
+        ],
+        "price": 101,
+        "summary": "Unwind in this tranquil apartment close to Astoria Park. The apartment interiors are well curated with neutral colours, elegant furnishings, and an abundance of sunlight lending a serene ambience. Its prime location offers you access to hottest NYC spots; from top restaurants, shops, cafes, bars, entertainment spots and may more! With 3 bedrooms, 2 full bathrooms, high-speed Wi-Fi, and an array of modern amenities and appliances, the home provides an ideal retreat for groups of 6 or less.",
+        "capacity": 8,
+        "amenities": [
+        "TV",
+        "Kitchen",
+        "Pets allowed",
+        "Wifi",
+        "Air conditioning",
+        "Smoking allowed",
+        "First aid kit",
+        "Free parking on premises",
+        "Hair dryer",
+        "Hot water",
+        "Pool",
+        "Elevator",
+        "Gym",
+        "Doorman",
+        "Heating",
+        "Kitchen",
+        "Family/kid friendly",
+        "Suitable for events",
+        "Washer",
+        "Smoke detector",
+        "Carbon monoxide detector",
+        "Safety card",
+        "Fire extinguisher",
+        "Essentials",
+        "Shampoo",
+        "24-hour check-in",
+        "Hangers",
+        "Hair dryer",
+        "Iron",
+        "Laptop friendly workspace",
+        "Self check-in",
+        "Building staff",
+        "Private entrance",
+        "Room-darkening shades",
+        "Hot water",
+        "Bed linens",
+        "Extra pillows and blankets",
+        "Ethernet connection",
+        "Luggage dropoff allowed",
+        "Long term stays allowed",
+        "Ground floor access",
+        "Wide hallway clearance",
+        "Step-free access",
+        "Wide doorway",
+        "Flat path to front door",
+        "Well-lit path to entrance",
+        "Disabled parking spot",
+        "Step-free access",
+        "Wide doorway",
+        "Wide clearance to bed",
+        "Step-free access",
+        "Wide doorway",
+        "Step-free access",
+        "Wide entryway",
+        "Waterfront",
+        "Beachfront"
+        ],
+        "bathrooms": 2,
+        "bedrooms": 2,
+        "roomType": "Apartment",
+        "host": {
+        "_id": "622f3403e36c59e6164faf93",
+        "fullname": "Patty And Beckett",
+        "location": "Eureka, California, United States",
+        "about": "Adventurous couple loves to travel :)",
+        "responseTime": "within an hour",
+        "thumbnailUrl": "https://res.cloudinary.com/dtaiyvzq5/image/upload/v1670700573/tovimdeubexsdzmzdycu.webp",
+        "pictureUrl": "https://res.cloudinary.com/dtaiyvzq5/image/upload/v1670700573/tovimdeubexsdzmzdycu.webp",
+        "isSuperhost": true,
+        "id": "36133410"
+        },
+        "loc": {
+        "country": "United States",
+        "countryCode": "US",
+        "city": "New York",
+        "address": "51, West 29th Street, Midtown West",
+        "lat": 40.746514,
+        "lan": -73.989736
+        },
+        "reviews": [
+        {
+            "at": "2016-06-12T04:00:00.000Z",
+            "by": {
+            "_id": "622f3407e36c59e6164fc004",
+            "fullname": "Kiesha",
+            "imgUrl": "https://res.cloudinary.com/dtaiyvzq5/image/upload/v1670705495/kmfst5hn9pq3xax2bxad.webp",
+            "id": "10711825"
+            },
+            "txt": "I had a great experience working with Patty and Beckett.  Both were very attentive in sorting out the booking details and following up directly when I had questions.  I rented a 2 bedroom unit at the Westin Villas  in Maui and both the unit and property was absolutely amazing.  I think we had the best unit on the resort complete with 2 outdoor patios with direct access  to  the  beach.  I would HIGHLY recommend renting with Patty and Beckett.",
+            "rate": {
+            "Cleanliness": 4.5,
+            "Communication": 4.7,
+            "CheckIn": 4.7,
+            "Accuracy": 4.5,
+            "Location": 4.9,
+            "Value": 5.0
+            }
+        },
+        {
+            "at": "2016-07-28T04:00:00.000Z",
+            "by": {
+            "_id": "622f3403e36c59e6164fb204",
+            "fullname": "Chris",
+            "imgUrl": "https://res.cloudinary.com/dtaiyvzq5/image/upload/v1670705495/rxctksbkq5evchbvj5yn.webp",
+            "id": "70072865"
+            },
+            "txt": "Beckett quickly responded to any questions I had before, and during the trip. Will use again, highly recommend. ",
+            "rate": {
+            "Cleanliness": 4.5,
+            "Communication": 4.7,
+            "CheckIn": 4.6,
+            "Accuracy": 4.6,
+            "Location": 4.8,
+            "Value": 4.9
+            }
+        },
+        {
+            "at": "2016-09-11T04:00:00.000Z",
+            "by": {
+            "_id": "622f3405e36c59e6164fb703",
+            "fullname": "Kim",
+            "imgUrl": "https://res.cloudinary.com/dtaiyvzq5/image/upload/v1670705495/gda46rh87vu3qvrv6wb1.webp",
+            "id": "71179725"
+            },
+            "txt": "We had the perfect location for a room, first floor right in front of the pool. The resort is beautiful, and the staff is so friendly! I enjoyed it so much, we talked about buying a timeshare ourselves.",
+            "rate": {
+            "Cleanliness": 4.5,
+            "Communication": 4.8,
+            "CheckIn": 4.7,
+            "Accuracy": 4.5,
+            "Location": 4.6,
+            "Value": 5
+            }
+        },
+        {
+            "at": "2017-01-07T05:00:00.000Z",
+            "by": {
+            "_id": "622f3404e36c59e6164fb37f",
+            "fullname": "Tracy",
+            "imgUrl": "https://res.cloudinary.com/dtaiyvzq5/image/upload/v1670705495/fg656hqrcsbenxmctske.webp",
+            "id": "65593239"
+            },
+            "txt": "Beautiful location. Patty & Beckett were super helpful and easy to work with!",
+            "rate": {
+            "Cleanliness": 4.5,
+            "Communication": 4.7,
+            "CheckIn": 5,
+            "Accuracy": 4.8,
+            "Location": 4.7,
+            "Value": 4.5
+            }
+        },
+        {
+            "at": "2017-04-07T04:00:00.000Z",
+            "by": {
+            "_id": "622f3403e36c59e6164fb105",
+            "fullname": "Duyen",
+            "imgUrl": "https://res.cloudinary.com/dtaiyvzq5/image/upload/v1670705495/jyr0blhkafk1iwwcrh7y.webp",
+            "id": "26215688"
+            },
+            "txt": "Great spot for the kids and family and close to beach and everything at the resort. We will definitely be back.",
+            "rate": {
+            "Cleanliness": 4.5,          
+            "Communication": 4.7,
+            "CheckIn": 4.5,
+            "Accuracy": 4.9,
+            "Location": 4.8,
+            "Value": 4.7
+            }
+        },
+        {
+            "at": "2017-05-09T04:00:00.000Z",
+            "by": {
+            "_id": "622f3402e36c59e6164fabbe",
+            "fullname": "Binh",
+            "imgUrl": "https://res.cloudinary.com/dtaiyvzq5/image/upload/v1670705495/przztwou0jqm7dlczfim.webp",
+            "id": "117390236"
+            },
+            "txt": "The unit and the Westin offer variety of amenities you can possibly ask for. Sofa beds are very comfortable to sleep in. But there is charge for ocean view upgrade. Overall, I highly recommend to book with Patty and Beckett. ",
+            "rate": {
+            "Cleanliness": 4.5,
+            "Communication": 4.6,
+            "CheckIn": 4.9,
+            "Accuracy": 4.8,
+            "Location": 4.7,
+            "Value": 4.9
+            }
+        },
+        {
+            "at": "2018-02-24T05:00:00.000Z",
+            "by": {
+            "_id": "622f3404e36c59e6164fb4af",
+            "fullname": "Samy",
+            "imgUrl": "https://res.cloudinary.com/dtaiyvzq5/image/upload/v1670705495/rxctksbkq5evchbvj5yn.webp",
+            "id": "15143517"
+            },
+            "txt": "We spent a great week at Patty and Beckett's place. The place was exactly as shown in the pictures, very comfortable, nice view, with all amenities. The resort is great with several pools, a long beach, many restaurants, and of course a lot of great activities all around.",
+            "rate": {
+            "Cleanliness": 4.5,
+            "Communication": 4.7,
+            "CheckIn": 4.5,
+            "Accuracy": 4.9,
+            "Location": 5,
+            "Value": 4.8
+            }
+        },
+        {
+            "at": "2018-06-16T04:00:00.000Z",
+            "by": {
+            "_id": "622f3405e36c59e6164fb87b",
+            "fullname": "Breanne",
+            "imgUrl": "https://res.cloudinary.com/dtaiyvzq5/image/upload/v1670705495/kmfst5hn9pq3xax2bxad.webp",
+            "id": "78173091"
+            },
+            "txt": "This place was perfect for my family. We had plenty of room to spread out and the service could not have been any better",
+            "rate": {
+            "Cleanliness": 4.5,
+            "Communication": 4.5,
+            "CheckIn": 4.5,
+            "Accuracy": 4.7,
+            "Location": 4.7,
+            "Value": 5
+            }
+        },
+        {
+            "at": "2018-06-29T04:00:00.000Z",
+            "by": {
+            "_id": "622f3405e36c59e6164fb713",
+            "fullname": "Kimberly",
+            "imgUrl": "https://res.cloudinary.com/dtaiyvzq5/image/upload/v1670705495/gda46rh87vu3qvrv6wb1.webp",
+            "id": "100535039"
+            },
+            "txt": "We love Westin Kaanapalli",
+            "rate": {
+            "Cleanliness": 4.5,
+            "Communication": 4.9,
+            "CheckIn": 4.7,
+            "Accuracy": 4.6,
+            "Location": 5,
+            "Value": 4.8
+            }
+        }
+        ],
+        "likedByUsers": []
+    }
+]

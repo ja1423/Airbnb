@@ -1,0 +1,35 @@
+[
+    {
+        name: '',
+        hostedByUser: '',
+        price: 10,
+        address: {latlng: {lat: 0,lng: 0},country: 'israel',city: 'netanya',streat: ''},
+        rate: 3,
+        imgs: [],
+        typeOfPlace: 'apartment',
+        bedrooms: 1,
+        beds: 2,
+        bathrooms: 1,
+        essentials: ['wiffi','kitchen','dryer','air condition','tv'],
+        features: ['pool','hot tub','Free parking on premises'],
+        location: ['Waterfront'],
+        houseRules: {checkIn: '', checkOut: '', maximumGuest: 5},
+        cancellationPolicy: ''
+        safety: ['Smoke alarm'],
+        bookingOptions: ['Self check-in'],
+        hostLanguage: ['English'],
+        reservedDates: []
+    }
+]
+
+[
+    {
+        fullName: "Fritz Harmati",
+        userName: '',
+        isLoggedIn: false,
+        password: '',
+        isHost: true,
+        roomHosted: [],
+        reservations: []
+    }
+]
