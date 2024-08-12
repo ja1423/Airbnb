@@ -1,0 +1,73 @@
+.add-stay-form{
+    // justify-self: center;
+        >* {
+            width: 300px;
+        } 
+        >:first-child{
+            width: 400px;
+        }
+        .currencyinput {
+            border: 1px inset #ccc;
+        }
+        .currencyinput input {
+            border: 0;
+        }
+        
+        // >:nth-child(4){
+        //     padding: 0;
+        //     border: 1px inset #ccc;
+        //     >input{
+        //         border: 0;
+        //     }
+        // }
+        
+        .Place-description{
+            width: 600px;
+        } 
+}
+
+.add-stay-container{
+    >h1{
+        text-align: center;
+        margin-top: 80px;
+    }
+}
+
+.img-upload{
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    svg{
+        width: 100px !important;
+        height: 100px !important;
+    }
+}
+
+.add-stay-container{
+    div{
+        // display: flex;
+    }
+    .img-gallery{
+        justify-content: center;
+        border: solid 1px #80808052;
+        // display: inline-grid;
+        >:first-child{
+            &.big{
+                height: 100%;
+                padding-top: 100px;
+            }
+        }
+    }
+    
+}
+.el-form-item__label{
+    width: 150px;
+    justify-content: flex-start !important;
+}
+
+.el-form .el-form--default .el-form--label-right .add-stay-form{
+    >:nth-child(7){
+        
+    }
+}

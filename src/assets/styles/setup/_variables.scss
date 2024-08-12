@@ -1,0 +1,27 @@
+// Colors
+$clr1: #ce2e6c;
+$clr2: #717171;
+$clr3: #574f7d;
+$clr4: #95adbe;
+$clr5: #dff0ea;
+$clr6: #fff;
+
+// LAYOUT
+$layoutPadding: 20px;
+
+// Breakpoints
+$mobile-breakpoint: 550px;
+$details-narrow-breakpoint: 750px;
+$narrow-breakpoint: 950px;
+$small-breakpoint: 1128px;
+$normal-breakpoint: 1640px;
+$wide-breakpoint: 1880px;
+
+
+$padded-break-mobile: $mobile-breakpoint - 48px;
+$padded-details-narrow-breakpoint: $details-narrow-breakpoint - 48px;
+$padded-break-narrow: $narrow-breakpoint - 48px;
+$padded-break-small: $small-breakpoint - 80px;
+$padded-break-normal: $normal-breakpoint - 80px;
+$padded-break-wide: $wide-breakpoint - 160px;
+// $padded-break-extra-wide: $break-wide - $layoutPadding * 2;

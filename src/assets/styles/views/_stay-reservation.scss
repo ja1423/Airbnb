@@ -1,0 +1,245 @@
+.stay-reservation {
+  display: grid;
+  grid-template-areas:
+    "your-trip img-container"
+    "stay-details img-container"
+    "price-details img-container"
+    "balnk btn";
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: fit-content;
+  padding: 10px;
+  background-color: white;
+  text-align: center;
+  grid-column: 2;
+  // grid-template-rows: 1fr 1fr 1fr 0.25fr;
+  grid-template-columns: 0.5fr 1fr;
+  color: #373737;
+  font-family: Airbnb-Cereal-Book;
+  font-size: 16px;
+  
+  @include for-mobile-layout {
+    padding-left: 30px;
+    padding-right: 30px;
+    .img-container{
+      display: flex !important;
+      flex-direction: column;
+    }
+    .btn-container{
+      margin-left: -30px !important;
+      width: 80% !important;
+    }
+  }
+  @include for-details-narrow-layout{
+    padding-left: 40px;
+    padding-right: 40px;
+    .img-container{
+      display: flex !important;
+      flex-direction: column;
+    }
+    .btn-container{
+      margin-left: -30px !important;
+      width: 80% !important;
+    }
+  }
+  @include for-narrow-layout {
+    padding-left: 60px;
+    padding-right: 60px;
+    .img-container{
+      display: grid !important;
+    }
+    .btn-container{
+      margin-left: 0px !important;
+      width: 50% !important;
+    }
+  }
+  @include for-small-layout {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  @include for-normal-layout {
+    padding-left: 150px;
+    width: 100%;
+    padding-right:150px ; 
+  }
+  @media (min-width: 1440px){
+    padding-left: calc(50% - 560px);
+    width: 100%;
+    padding-right:calc(50% - 560px) ;
+  }
+  @include for-wide-layout {
+    padding-left: calc(50% - 560px);
+    width: 100%;
+    padding-right:calc(50% - 560px) ;      
+  } 
+
+  @include for-extra-wide-layout {
+    padding-left: calc(50% - 560px);
+    width: 100%;
+    padding-right:calc(50% - 560px) ;    
+  } 
+
+
+  >* {
+    font-family: Airbnb-Cereal-Bold;
+    text-align: start;
+  }
+
+  // img {
+  //   width: em(150px);
+  //   height: em(90px);
+  // }
+
+  h1,
+  h3 {
+    color: black;
+  }
+
+  h2 {
+    font-size: 22px;
+    color: #373737;
+  }
+  
+  .head{
+    margin-top: 10px;
+    // margin-left: 20px;
+  }
+
+  .text{
+    padding-bottom:10px;
+    // margin-left: 20px;
+  }
+
+  h4{
+    margin: 0;
+  }
+
+  .your-trip {
+    width: 90%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.162);
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    grid-area: your-trip;
+    
+    
+    
+  }
+  
+  .reservation-details {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.162);
+    grid-area: stay-details;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 90%;
+    margin-top: 15px;
+    
+
+  }
+  .img-container {
+    grid-area: img-container;
+    margin-left: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    height: 100%;
+    width: 100%;
+
+      
+      img{
+        border-radius: 8px;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+
+
+  }
+
+  .price-details{
+    margin-top: 15px;
+    justify-content: start;
+    grid-area: price-details;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .btn-container {
+    margin-top: 32px !important;
+    grid-area: btn;
+    position: relative;
+    width: 50%;
+    // margin-right: auto !important;
+    // margin-left: auto !important;
+    height: 48px;
+    padding: 0 0;
+    margin: 0 0;
+    // margin-bottom: 20px;
+    cursor: pointer;
+    border: none;
+    display: grid;
+    grid-template: repeat(10, 1fr) / repeat(10, 1fr);
+
+    @for $i from 0 to 10 {
+      .cell:nth-child(10n + #{$i + 1}):hover~.content {
+        --positionX: #{$i};
+      }
+
+      .cell:nth-child(n + #{10 * $i + 1}):nth-child(-n + #{10 * ($i + 1)}):hover~.content {
+        --positionY: #{$i};
+      }
+    }
+  }
+
+  .cell {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    // border: 1px solid rgba(128, 128, 128, 0.753);
+  }
+
+  .content {
+    --positionX: 0;
+    --positionY: 5;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border-radius: 8px;
+
+    background-image: radial-gradient(circle at calc((0 + var(--positionX, 0)) * 10%) calc((0 + var(--positionY, 0)) * 5%),
+        rgb(241, 37, 75) 0%,
+        rgb(230, 30, 77) 27.5%,
+        rgb(227, 28, 95) 40%,
+        rgb(215, 4, 102) 57.5%,
+        rgb(189, 30, 89) 75%,
+        rgb(189, 30, 89) 100%);
+  }
+
+  .action-btn {
+    padding: 0 0;
+    margin: 0 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+
+    .btn {
+      padding: 0 0;
+      margin: 0 0;
+      color: white;
+      font-size: medium;
+      line-height: 20px;
+      font-weight: 600;
+      font-family: Airbnb-Cereal-Book;
+    }
+  }
+}

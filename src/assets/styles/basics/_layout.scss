@@ -1,0 +1,186 @@
+.container {
+    max-width: 1500px;
+    padding: 10px;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 20px 1fr 20px;
+
+    > * {
+        grid-column: 2;
+
+        &.full {
+            grid-column: 1 /-1;
+        }
+    }
+
+    @include for-mobile-layout {
+        grid-template-columns: 
+            minmax(24px, 1fr)
+            minmax(auto, $padded-break-mobile)
+            minmax(24px, 1fr);
+    }
+    @include for-details-narrow-layout {
+        grid-template-columns: 
+        minmax(24px, 1fr)
+        minmax($padded-break-mobile, auto)
+        minmax(24px, 1fr);
+    }
+    @include for-narrow-layout {
+        grid-template-columns: 
+            minmax(24px, 1fr)
+            minmax(auto, $padded-break-narrow)
+            minmax(24px, 1fr);
+    }
+    @include for-small-layout {
+        grid-template-columns: 
+            minmax(40px, 1fr)
+            minmax(auto, $padded-break-small)
+            minmax(40px, 1fr);
+    }
+    @include for-normal-layout {
+        grid-template-columns: 
+            minmax(40px, 1fr)
+            minmax(auto, $padded-break-normal)
+            minmax(40px, 1fr);
+    }
+    @include for-wide-layout {
+        grid-template-columns: 
+            minmax(80px, 1fr)
+            minmax(auto, $padded-break-wide)
+            minmax(80px, 1fr);
+    }
+    @include for-extra-wide-layout {
+        grid-template-columns: 
+            minmax(80px, 1fr)
+            minmax($padded-break-wide, auto)
+            minmax(80px, 1fr);
+    }
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+.header-layout{
+    position: fixed;
+    @include for-mobile-layout {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    @include for-details-narrow-layout{
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    @include for-narrow-layout {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    @include for-small-layout {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    @include for-normal-layout {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    @include for-wide-layout {
+        padding-left: 80px;
+        padding-right: 80px;       
+    }
+    @include for-extra-wide-layout {
+        padding-left: 80px;
+        padding-right: 80px;    
+    }
+    &.details{
+        position: absolute;
+        top: 0;
+        @include for-mobile-layout {
+            padding-left: 60px;
+            padding-right: 60px;
+        }
+        @include for-details-narrow-layout{
+            padding-left: 60px;
+            padding-right: 60px;
+        }
+        @include for-narrow-layout {
+            padding-left: 60px;
+            padding-right: 60px;
+        }
+        @include for-small-layout {
+            padding-left: 80px;
+            padding-right: 80px;
+        }
+        @include for-normal-layout {
+            padding-left: 150px;
+            width: 100%;
+            padding-right:150px ; 
+        }
+        @media (min-width: 1440px){
+            padding-left: calc(50% - 560px);
+            width: 100%;
+            padding-right:calc(50% - 560px) ;
+        }
+        @include for-wide-layout {
+            padding-left: calc(50% - 560px);
+            width: 100%;
+            padding-right:calc(50% - 560px) ;      
+        }
+       
+        @include for-extra-wide-layout {
+            padding-left: calc(50% - 560px);
+            width: 100%;
+            padding-right:calc(50% - 560px) ;    
+        } 
+    }
+}
+
+.user-nav-layout{
+    position: fixed;
+    @include for-mobile-layout {
+        right: 24px;
+    }
+    @include for-details-narrow-layout{
+        right: 24px;
+    }
+    @include for-narrow-layout {
+        right: 24px;
+    }
+    @include for-small-layout {
+        right: 40px;
+    }
+    @include for-normal-layout {
+        right: 40px;
+    }
+    @include for-wide-layout {
+        right: 80px;       
+    }
+    @include for-extra-wide-layout {
+        right: 80px;    
+    }
+    &.details{
+        position: absolute;
+        
+        @include for-mobile-layout {
+            right: 60px;
+        }
+        @include for-narrow-layout {
+            right: 60px;
+        }
+        @include for-small-layout {
+            right: 80px;
+        }
+        @include for-normal-layout {
+            right: calc(50% - 560px);
+        }
+        @include for-wide-layout {
+            right: calc(50% - 560px);   
+        }
+        @include for-extra-wide-layout {
+            right: calc(50% - 560px);   
+        } 
+    }
+}

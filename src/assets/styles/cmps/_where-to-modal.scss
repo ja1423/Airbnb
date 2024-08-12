@@ -1,0 +1,58 @@
+
+.where-to-modal {
+    border: 1px solid #DDDDDD;
+    color: #222222;
+    border-radius: 12px;
+    padding: 18px 18px;
+    box-shadow: 0 0 0 1px rgb(0 0 0 / 4%), 0 6px 20px rgb(0 0 0 / 20%);
+    height: fit-content;
+    grid-row: 2;
+
+    .search-destinations {
+        border-radius: 8px;
+        border: 1px solid #DDDDDD;
+        padding: 20px;
+        margin-block-start: 16px;
+        font-size: 14px;
+        align-items: flex-start;
+        input {
+            outline: none;
+            border: none;
+            padding-inline-start: 12px;
+        }
+    }
+    .search-focus {
+        border: none;
+        background-color: #F7F7F7;
+        > * {
+            background-color: #F7F7F7;
+        }
+    }
+    .input-destination-container {
+        padding-block-end: 16px;
+        label {
+            font-family: Airbnb-Cereal-Medium;
+            font-size: 22px;
+        }
+    }
+}
+
+.where-to-modal-preview {
+    margin-inline-end: 20px;
+    font-size: 14px;
+    img {
+        border-radius: 12px;
+        border: 1px solid #DDDDDD;
+    }
+    
+}
+
+.where-to-modal-list{
+    overflow-x:scroll;
+    scrollbar-color: transparent;
+  
+}
+
+.where-to-modal-list::-webkit-scrollbar {
+    display: none;
+}

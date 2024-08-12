@@ -1,0 +1,473 @@
+.stay-reserve {
+    width: initial;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgb(0 0 0 / 20%) 0px 6px 20px;
+    padding: 24px;
+    border-radius: 16px;
+    background-color: white;
+
+  @media (max-width: calc($details-narrow-breakpoint )) {
+    align-items: center;
+    position: fixed !important;
+    flex-direction: row;
+    bottom: 0;
+    right: 0;
+    z-index: 100000;
+
+    .order-form-header{
+      margin-top: auto;
+      margin-bottom: auto;
+      width: 30%;
+      margin-right: 10px;
+      flex-direction: column;
+      & p{
+        display: flex;
+        margin: 0;
+        font-size: 16px;
+        line-height: 17px;
+        align-items: center;
+        flex-direction: row;
+      }
+      & span{
+        margin-right: 10px;
+        font-size: 20px !important;
+      }
+        .review-score{
+          display: none;
+        }
+    }
+
+    .order-form-header::after{
+      content: attr(data);
+      padding-top: 5px;
+      margin-bottom: -5px;
+      font-size: 14px;
+    }
+
+
+    .order-data{
+      margin-right: 30px;
+      display: flex;
+      max-width: 35%;
+      justify-content: space-between;
+      flex-direction: row;
+      border: none;
+      height: 48px;
+    }
+
+    .date-picker{
+      max-width: 50%;
+      border-radius: 8px;
+
+      :nth-child(2){
+        display: none;
+      }
+
+      .date-input{
+        box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+        border-radius: 8px;
+        margin-right: 20px;
+        display: none;
+      }
+    }
+    
+    .guest-input{
+      display: none !important;
+    }
+
+    .calender-container{
+      .vc-container{
+        box-shadow: 0px 0px 5px rgba(0,0,0,0.4);
+        // padding-left: 20%;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        
+        .vc-pane-layout{
+          display: flex;
+          flex-direction: column;
+        }
+      }
+
+      .date-picker{
+        display: none;
+      }
+    }
+
+    .who-search-container{
+      width: 50px;
+    }
+
+    .reserve-total-price{
+      display: none;
+    }
+    .btn-container{
+      margin-bottom: 1px !important;
+    }
+      
+  }
+  
+  @media (min-width: calc($details-narrow-breakpoint )) {
+    height: fit-content;
+    top: 50px;
+    flex-direction: column;
+  
+    .btn-container{
+        margin-top: 15px !important;
+      }
+    .order-container {
+      border: 1px solid #00000030;
+      border-radius: 13px;
+      padding: 20px;
+      width: 100%;
+      box-shadow: 0 0 5px 5px #00000015;
+      padding-bottom: 0px;
+    }
+
+    .guest-input{
+      border-top: 1px solid #00000050;
+    }
+
+    .order-form-header{
+      flex-direction: column;
+    }
+
+    .order-data {
+      border: 1px solid #00000050;
+    }
+  }
+  @include for-normal-layout {
+    // flex-direction: row;
+    // align-items: center;
+    .order-form-header{
+      flex-direction: row;
+      align-items: center;
+      .review-score{
+        margin-bottom: 0 !important;
+        margin-top: 7px;
+      }
+    }
+    
+  }
+
+  label{
+    font-family: Airbnb-Cereal-Book;
+    font-size: small;
+  }
+
+
+  .order-form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+
+    svg{
+      margin-bottom: 3px;
+    }
+  }
+    
+  
+    p {
+      margin-top: 0;
+    }
+  
+  .order-data {
+    border-radius: 13px;
+    
+    &.open{
+      margin-right: em(300px);
+      border: 0px solid #00000050;
+    }
+  }
+  
+  .date-picker {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .date-input {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 7px 12px;
+    color: black;
+    font-size: 0.75rem;
+    &:last-of-type {
+      border-left: 1px solid #00000050;
+    }
+  }
+  
+  .guest-input {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    // border-top: 1px solid #00000050;
+    padding: 7px 12px;
+    color: black;
+    font-size: 0.75rem;
+  
+    svg {
+      position: absolute;
+      height: 20px;
+      width: 20px;
+      top: 50%;
+      right: 0;
+      transform: translatex(-12px) translatey(-50%);
+    }
+  }
+  
+  input {
+    border: none;
+    padding: 0 0;
+    width: 100%;
+    outline: none;
+  }
+  
+  label {
+    font-weight: 600;
+    font-size: 12px;
+  }
+  
+  span.cost {
+    font-weight: 600;
+    color: black;
+    font-size: 1.3em;
+  }
+  
+  .span-reviews {
+    color: #717171;
+    font-size: 14px;
+    text-decoration: underline;
+    font-family: Airbnb-Cereal-Medium;
+    line-height: 10px;
+    cursor: pointer;
+  }
+
+  .review-score{
+    font-size: em(14px);
+    font-family: Airbnb-Cereal-Medium;
+  }
+  
+  .btn-container {
+    // margin-top: 15px;
+    position: relative;
+    width: 100%;
+    height: 48px;
+    padding: 0 0;
+    margin: 0 0;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border: none;
+    display: grid;
+    grid-template: repeat(10, 1fr) / repeat(10, 1fr);
+  
+    @for $i from 0 to 10 {
+      .cell:nth-child(10n + #{$i + 1}):hover ~ .content {
+        --positionX: #{$i};
+      }
+  
+      .cell:nth-child(n + #{10 * $i + 1}):nth-child(-n + #{10 * ($i + 1)}):hover
+        ~ .content {
+        --positionY: #{$i};
+      }
+    }
+  }
+  
+  .cell {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    // border: 1px solid rgba(128, 128, 128, 0.753);
+  }
+  
+  .content {
+    --positionX: 0;
+    --positionY: 5;
+  
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border-radius: 8px;
+  
+    background-image: radial-gradient(
+      circle at calc((0 + var(--positionX, 0)) * 10%)
+        calc((0 + var(--positionY, 0)) * 5%),
+      rgb(241, 37, 75) 0%,
+      rgb(230, 30, 77) 27.5%,
+      rgb(227, 28, 95) 40%,
+      rgb(215, 4, 102) 57.5%,
+      rgb(189, 30, 89) 75%,
+      rgb(189, 30, 89) 100%
+    );
+  }
+  
+  .action-btn {
+    padding: 0 0;
+    margin: 0 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+
+    .btn{
+      padding: 0 0;
+      margin: 0 0;
+      color: white;
+      font-size: medium;
+      line-height: 20px;
+      font-weight: 600;
+      font-family: Airbnb-Cereal-Book;
+    }
+  }
+  
+  .calender-container{
+    box-shadow: rgb(0 0 0 / 20%) 0px 6px 20px;
+    padding: 24px 32px 16px;
+    border-radius: 16px;
+    display: inline-block;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: em(661px);
+    max-height: em(460px);
+    z-index: 8;
+    background-color: white;
+
+     .date-picker{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        input{
+          width: em(100px);
+        }
+        
+        .input-container{
+          display: flex;
+          flex-direction: row;
+          height: em(56px);
+        }
+        
+        .date-input{
+          width: em(200px);
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          color: black;
+        }
+        
+        .start{
+          border: 1px solid black;
+          border-radius: 8px 0px 0px 8px;
+        }
+        
+        .end{
+          border: 1px solid black;
+          border-radius: 0px 8px 8px 0px;
+        }
+        
+        .focus{
+          border: 3px solid black;
+        }
+
+        .btn-cancel{
+          color: black;
+          background-color: inherit;
+          cursor: pointer;
+         }
+      }
+    }
+
+    .vc-container{
+      width: 100%;
+      border: none;
+      .vc-day >*{
+        font-family: Airbnb-Cereal-Bold !important;
+        margin: 1px 0px;
+        &:hover{
+          border: 1.5px solid black;
+          background-color: transparent;
+        }
+      }
+    }
+
+    .calender-actions{
+      width: fit-content;
+      height: fit-content;
+      margin-left: auto;
+      margin-top: 20px;
+    }
+
+    .clear-dates{
+      background-color: transparent;
+      color: #222222;
+      font-weight:600;
+      text-decoration-line:underline;
+      cursor: pointer;
+      font-size: medium;
+      padding: 8px 16px;
+    }
+    
+    .close{
+      padding: 8px 16px;
+      margin: 0;
+      background-color: black;
+      color: white;
+      font-size: medium;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    
+    .reserve-total-price{
+      width: 100%;
+
+      .charge-msg{
+        text-align: center;
+        font-size: 14px;
+      }
+
+      .reserve-price{
+        width: 100%;
+        padding-top: 12px;
+
+        .text{
+          font-family: Airbnb-Cereal-Book;
+          font-size: medium;
+          text-decoration-line: underline;
+        }
+        
+      }
+      .total{
+        padding-top: 24px;
+        margin-top: 24px;
+        border-top: 1px solid rgba(128, 128, 128, 0.269);
+        
+        .text{
+          font-family: Airbnb-Cereal-Medium;
+          font-size: em(16px);
+          // font-family: Airbnb-Cereal-Bold;
+        }
+        .amount{
+          font-family: Airbnb-Cereal-Bold;
+        }
+        
+      }
+    }
+}
+
+  

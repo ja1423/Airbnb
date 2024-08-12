@@ -1,0 +1,228 @@
+.is-host {
+    display: none;
+}
+  
+// ORDERS TABLE //
+.host-orders-list {
+    margin-block-start: 40px;
+}
+  
+.host-actions {
+    color: #373737;
+    border: 0.6px solid #e0e0e0;
+    height: 22px;
+    border-radius: 4px;
+    font-size: 12px;
+    line-height: 16px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.12);
+    padding-inline-start: 4px;
+}
+.orders-table {
+    border-radius: 16px;
+    --easy-table-border: transparent;
+    box-shadow: 0px 0px 12px rgba(0,0,0,0.12);
+}
+  
+.orders-table th {
+    font-size: 14px;
+    font-family: Airbnb-Cereal-Medium;
+}
+  
+.orders-table td:last-child, .orders-table th:last-child {
+    padding-inline-end: 10px;
+    text-align: right;
+}
+  
+thead.vue3-easy-data-table__header {
+    height: 40px;
+}
+  
+.orders-table table {
+   border-radius: 12px;
+}
+
+.host-actions-select {
+    text-align: right;
+}
+.red {
+    --easy-table-body-row-background-color: #FAEBE0;
+    --easy-table-body-row-font-color: #222222;
+}
+.orange {
+    --easy-table-body-row-background-color: #FAF7F0;
+    --easy-table-body-row-font-color: #222222;
+}
+.green {
+    --easy-table-body-row-background-color: #DEF5E5;
+    --easy-table-body-row-font-color: #222222;
+}
+  
+  
+//STAYS - TABLE//
+.host-stays {
+    border-radius: 6px;
+    border: 1px solid #e0e0e0;
+    width: 100%;
+    border-collapse: collapse;
+}
+.host-stays th {
+    font-size: 14px;
+    text-align: left;
+    color: #222222;
+    border-bottom: 1px solid #e0e0e0;
+    height: 40px;
+    background-color: #e0e0e0;
+}
+  
+.host-stays tbody tr:hover{
+    background-color:#F2F3F5;
+} 
+.host-stays td {
+    font-size: 12px;
+    height: 36px;
+    color: #373737;
+    border-bottom: 1px solid #e0e0e0;
+}
+  
+  
+.host-stays tr td:first-of-type, .host-stays tr th:first-of-type {
+    padding-inline-start: 10px;
+}
+.host-stays td:last-child {
+    text-align:right;
+    padding-inline-end: 10px;
+}
+.host-stays .start {
+    padding-inline-start: 10px;
+}
+  
+button.edit-stay:hover, button.remove-stay:hover, .view-stay:hover {
+  background-color: #e0e0e0;
+  cursor: pointer;
+}
+.edit-stay {
+    background-color: #BCCEF8;
+}
+.view-stay {
+    background-color: #9ED5C5;
+}
+.remove-stay {
+    background-color: #F7A4A4;
+}
+  
+.edit-stay, .remove-stay, .view-stay {
+  border-radius: 4px;
+  color: #222222;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.12);
+  font-size: 12px;
+}
+  
+.host-orders-list.show {
+    display: block;
+}
+ .host-orders-list.none {
+    display: none;
+}
+.host-stays-container {
+    margin-block-start: 40px;
+}
+  
+.host-stays-container.show {
+    display: grid;
+}
+.host-stays-container.none {
+    display: none;
+}
+  
+.user-menu {
+    background-color: transparent;
+    border-bottom: 2px solid #717171;
+    color:#717171;
+    margin-block-end: 15px;
+    margin-inline-end: 15px;
+    font-size: 14px;
+    padding-bottom: 5px;
+    width:min-content;
+    cursor: pointer;
+}
+  
+.user-menu:hover, .user-menu.active {
+    color: #222222;
+    border-bottom: 3px solid #222222;
+    font-family: Airbnb-Cereal-Medium;
+}
+  
+.mini-stat-container {
+    min-height: 100%;
+}
+.stay-stat h3 {
+    font-size: 16px;
+    text-align: left;
+    color: #222222;
+    margin-block-end: 20px;
+}
+.mini-stat {
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 20px;
+    width: 32%;
+    min-height:100%;
+}
+.stat-info h3 {
+    font-size: 16px;
+    margin-block-start: 20px;
+    color:#373737;
+    font-family: Airbnb-Cereal-Medium;
+    line-height: 24px;
+}
+  
+.mini-stat h2.desc {
+    font-size: 16px;
+    padding-block-start: 15px;
+    border-top: 1px solid #222222;
+    width:fit-content;
+}
+  
+.bar-chart, .doughnut-chart {
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 20px;
+    height: fit-content;
+}
+.chart {
+    height: 200px;
+}
+.host-stays-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 20px;
+}
+  
+.stays-grid-3 {
+    grid-column: 1/3;
+    grid-row: 1/3; 
+    align-self: start;
+    justify-self: stretch;
+    min-height: 100%;
+}
+  
+.stays-grid-3 h1 {
+    color: #222222;
+    font-size: 16px;
+}
+.stays-grid-1 {
+    grid-column: 1/3;
+    grid-row: 3/5; 
+    align-self: start;
+    justify-self: stretch;
+}
+.stays-grid-2 {
+    grid-column: 3/4;
+    grid-row: 1/3; 
+}
+.stays-grid-4 {
+    grid-column: 3/4;
+    grid-row: 3/5; 
+}

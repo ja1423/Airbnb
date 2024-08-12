@@ -1,0 +1,91 @@
+.mobile-search-modal{
+    // display: grid;
+    grid-template-columns: 1fr 80% 1fr;
+    grid-template-rows: 3% 1fr 1fr 1fr 10%;
+
+    grid-gap: 12px;
+    > * {
+        // grid-column: 2;
+        margin-inline: 12px;
+        margin-block-end: 12px;
+        background-color: #FFFFFF;
+    }
+    position:absolute;
+    z-index: 100;
+    right: 0;
+    top: 0;
+    background-color:#F7F7F7;
+    height: 100vh;
+    width: 100%;
+
+    .btn-back{
+        background-color: transparent;
+        color: #222222;
+        width: fit-content;
+        height: fit-content;
+        border: none;
+        text-decoration: underline;
+    }
+    .modal-close {
+        border: none;
+        color: #222222;
+        border-radius: 12px;
+        padding: 18px 18px;
+        box-shadow: 0 1px 2px rgb(0 0 0 / 5%), 0 4px 6px rgb(0 0 0 / 3%);        
+        height: fit-content;
+        // grid-row: 2;
+    }
+    .action-container {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: #F7F7F7;
+    }
+    .tab-name {
+        font-size: 14px;
+        color: #717171;
+        font-family: Airbnb-Cereal-Medium;
+    }
+    .tab-value {
+        font-size: 14px;
+        color: #222222
+    }
+
+    .stay-who-search-modal{
+        box-shadow: 0 0 0 1px rgb(0 0 0 / 4%), 0 8px 16px rgb(0 0 0 / 15%);
+        height: 410px;
+        border-radius: 12px;
+        background-color: white;
+        display: grid;
+        padding: 18px;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr 1px 1fr 1px 1fr 1px 1fr;
+    
+    
+
+        >*{
+            padding: 24px 0;
+        
+            >:first-child{
+                color: #222222;
+                font-family: Airbnb-Cereal-Bold;
+                font-size: 16px;
+                margin-bottom: 6px;
+            }
+            >:nth-child(2){
+                margin: 0;
+                font-size: 14px;
+            }
+        }
+    
+    }
+}
+
+
+
+
+
+.btn-search {
+    border-radius: 8px;
+}

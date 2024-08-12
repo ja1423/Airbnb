@@ -1,0 +1,16 @@
+.details-map{
+    grid-area: details-map;
+    padding-top: 64px;
+    border-top: 1px solid rgba(128, 128, 128, 0.3);
+    h2{
+        padding-bottom: 18px;
+    }
+    @include for-mobile-layout {
+        max-width: 100% !important;
+        max-height: 100% !important;
+
+        .map{
+            max-height: 70% !important;
+        }
+    }
+}

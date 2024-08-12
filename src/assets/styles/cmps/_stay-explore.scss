@@ -1,0 +1,17 @@
+.stay-explore{
+    margin-top: 12rem;
+    >:first-child{
+        color: #222222;
+        font-size: 15px;
+        font-family: Airbnb-Cereal-Medium;
+        font-weight: 500;
+        margin-bottom: 2em;
+    }
+}
+
+.stay-list{
+    &.stay-list-explore{
+        margin-top: 0;
+    }
+   
+}
